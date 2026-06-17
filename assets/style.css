@@ -395,6 +395,96 @@ a {
   display: block;
 }
 
+/* hero decorative card (replaces missing image) */
+.hero-deco {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.hero-deco-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(201,168,76,.35);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  backdrop-filter: blur(4px);
+}
+
+.hero-deco-label {
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+
+.hero-deco-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.hero-deco-list li {
+  font-size: .95rem;
+  color: rgba(255,255,255,.85);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hd-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.hero-deco-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.hero-deco-stat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hds-item {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.hds-num {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hds-sub {
+  display: block;
+  font-size: .72rem;
+  color: rgba(255,255,255,.65);
+  letter-spacing: .05em;
+}
+
 /* ------------------------------------------------------------
    Site Main
    ------------------------------------------------------------ */
